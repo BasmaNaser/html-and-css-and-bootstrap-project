@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            animation: fadein 0.5s linear;
+        }
+        @keyframes fadein {
+            from{
+                opacity: 0;
+                transform: translate(-200,20);
+            }
+            to{
+                opacity: 1;
+                transform: translate(0,0);
+            }
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(141, 135, 135);
+            transition: all 0.1s linear;
+            font-weight: 600;
+            padding: 5px;
+        }
+
+        #about {
+            color: blue;
+            border-bottom: 1px solid blue;
+            animation: wid 0.3s linear;
+        }
+
+        nav a:hover {
+            color: blue;
+        }
+
+        nav i {
+            color: rgb(141, 135, 135);
+        }
+
+        footer a {
+            margin-left: 15px;
+        }
+
+        footer i {
+            margin-left: 12px;
+        }
+
+        @keyframes wid {
+            0% {
+                width: 0%;
+            }
+
+            25% {
+                width: 25%;
+            }
+
+            50% {
+                width: 50%;
+            }
+
+            75% {
+                width: 75%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        .year {
+            transition: all 0.3s linear;
+        }
+
+        .year:hover {
+            color: red;
+            cursor: pointer;
+        }
+        #p4 img{
+            filter: grayscale(100%);
+            transition: all 0.2s linear;
+        }
+        #p4 img:hover{
+            filter: grayscale(0%);
+        }
+        #p4 h3{
+            font-size: 30px;
+        }
+        #p5 p{
+            font-size: 16px;
+        }
+        #p5 i{
+            font-size: 35px;
+        }
+    </style>
+</head>
+<nav class="navbar navbar-expand-md bg-white border-bottom">
+    <div class="container">
+
+        <h1 class="navbar-brand text-primary fw-bold text-uppercase fs-1" style="letter-spacing: 3px;" href="#">
+            Tech Store
+        </h1>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home" href="./index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="about" href="#">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="services" href="./Service.html">Services</a>
+                </li>
+            </ul>
+
+            <div class="d-flex align-items-center gap-3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+
+                <button class="btn btn-primary">
+                    SHOP NOW
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+<section id="p1" class="py-5" style="background-color: #ecf5fe">
+    <div class="h-100">
+        <div class="row m-md-0  mx-0 align-items-center h-100 gap-3 gap-lg-0 justify-content-evenly">
+
+            <div class="col-md-5 col-12">
+                <h2 class="fs-1">Driven by innovation, defined by quality</h2>
+                <p>
+                    Since 2010, we have been bridging the gap between cutting-edge
+                    technology and the people who use it every day.
+                </p>
+            </div>
+
+            <div class="col-md-5 col-12">
+                <img class="img-fluid rounded-3"
+                    src="./EYZ5rV98-FeIek6X_hEdL4boepxgTLcOR8kdMJiVcTq2U-FyEAydy8X9c5a-KdOeY6TgQoM4kjcW7mC5d4Y8Sz6TlbUKTcqziMuKDSdkTA9IGaVX9C8jvtMpyvnG5JHMsYCzUBbfJFC5fki1mGC8VDR6fjOP1heF5HRYiBcPMD4WuD05ZQSSVpc4AlaHktAI.jpeg"
+                    alt="">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="p2" class="py-5" style="background-color: #f6faff;">
+    <div class="row g-0 justify-content-around align-items-center m-md-0 mx-3">
+        <div class="col-md-5">
+            <img src="./ChatGPT Image Jul 20, 2026, 12_21_44 AM.png " class="img-fluid rounded-1 w-100" alt="">
+        </div>
+        <div class="col-md-5 mt-md-0 mt-4">
+            <p class="fw-medium text-primary" style="letter-spacing: 2px;">OUR MISSION</p>
+            <h2 class="fs-lg-1 fs-2">Democratizing Next-Gen Technology</h2>
+            <p>At Tech Store, our vision is rooted in the belief that advanced technology should be accessible to
+                everyone without compromising on quality or experience. We curate only the most innovative hardware that
+                meets our rigorous standards for performance and design.
+
+                We don't just sell gadgets; we provide tools for the future. Our commitment extends beyond the
+                transaction, offering expert guidance to ensure every customer finds the perfect device to elevate their
+                digital lifestyle.</p>
+        </div>
+    </div>
+</section>
+
+<section id="p3" class="py-5">
+    <div>
+        <div class="row g-0 text-center">
+            <div class="mb-4">
+                <p class="fw-medium text-primary text-uppercase" style="letter-spacing: 2px;">the journey</p>
+                <h2 class="fs-lg-1 fs-2 text-capitalize fw-bold">our evolution since 2010</h2>
+            </div>
+            <div class="">
+                <div class="row g-0 m-4 justify-content-between align-items-center">
+                    <div class="col-7 mx-auto d-md-block d-none text-end pe-3 text-secondary" class="year">
+                        2010
+                    </div>
+                    <div
+                        class="col-md-5 col-12 text-start p-3 rounded-2 border border-secondary-subtle border-black" style="background-color: #f6faff;">
+                        <h5 class="d-md-none d-block">2010</h5>
+                        <h4>Founding</h4>
+                        <p>Tech Store opens its first physical boutique in the heart of the tech district, focusing on
+                            high-end computer components.</p>
+                    </div>
+                </div>
+                <div class="row g-0 m-4 justify-content-start align-items-center">
+                    <div
+                        class="col-md-5 col-12 text-start p-3 rounded-2 border border-secondary-subtle border-black" style="background-color: #f6faff;">
+                        <h5 class="d-md-none d-block">2015</h5>
+                        <h4>Global Expansion</h4>
+                        <p>TLaunched our e-commerce platform, serving customers worldwide and expanding our catalog to
+                            mobile devices and smart home tech.</p>
+                    </div>
+                    <div class="col-md-1 d-none d-md-block text-secondary">
+                        2015
+                    </div>
+                </div>
+                <div class="row g-0 m-4 justify-content-between align-items-center">
+                    <div class="col-7 mx-auto d-md-block d-none text-end pe-3 text-secondary" class="year">
+                        2020
+                    </div>
+                    <div
+                        class="col-md-5 col-12 text-start  p-3 rounded-2 border border-secondary-subtle border-black" style="background-color: #f6faff;">
+                        <h5 class="d-md-none d-block">2020</h5>
+                        <h4>Tech Ecosystem Launch</h4>
+                        <p>Introduction of our "Services" wing, providing 24/7 technical support and white-glove setup
+                            for integrated home offices.</p>
+                    </div>
+                </div>
+                <div class="row g-0 m-4 justify-content-start align-items-center">
+                    <div
+                        class="col-md-5 col-12 text-start  p-3 rounded-2 border border-secondary-subtle border-black" style="background-color: #f6faff;">
+                        <h5 class="d-md-none d-block">2024</h5>
+                        <h4>Innovation Hub</h4>
+                        <p>Opening of our flagship Concept Store, a physical playground for testing upcoming sustainable
+                            technologies and AI hardware.</p>
+                    </div>
+                    <div class="col-md-1 d-none d-md-block text-secondary">
+                        2024
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="p4" style="background-color: #f6faff;">
+    <div class=" g-0 mb-0 p-4">
+        <div class="text-center">
+            <p class="fw-medium text-primary text-uppercase" style="letter-spacing: 2px;">experience</p>
+            <h2 class="fs-lg-1 fs-2 text-capitalize fw-bold">meet our visionaries</h2>
+        </div>
+        <div class="m-2">
+            <div class="row g-0 mt-2 justify-content-center align-items-end">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="m-4">
+                    <img src="./ChatGPT Image Jul 20, 2026, 01_58_38 AM.png" class="w-100" alt="">
+                    <div class="mt-3">
+                        <h3>Sarah Chen
+                        </h3>
+                        <p class="fw-medium text-primary text-uppercase" style="letter-spacing: 2px;">Chief Tech Officer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="m-4">
+                    <img src="./ChatGPT Image Jul 20, 2026, 02_04_50 AM(4).png" class="w-100" alt="">
+                    <div class="mt-3">
+                        <h3>Marcus Thorne
+
+                        </h3>
+                        <p class="fw-medium text-primary text-uppercase" style="letter-spacing: 2px;">Head of Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="m-4">
+                    <img src="./ChatGPT Image Jul 20, 2026, 02_04_50 AM(6).png" class="w-100" alt="">
+                    <div class="mt-3">
+                        <h3>Alex Rivera
+                        </h3>
+                        <p class="fw-medium text-primary text-uppercase" style="letter-spacing: 2px;">Founder & CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="m-4">
+                    <img src="./ChatGPT Image Jul 20, 2026, 02_04_50 AM(8).png" class="w-100" alt="">
+                    <div class="mt-3">
+                        <h3>Elena Rodriguez
+
+                        </h3>
+                        <p class="fw-medium text-primary text-uppercase" style="letter-spacing: 2px;">CX Director</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="p5" style="background-color: #ecf5fe;">
+
+    <div class="mt-0 p-3">
+<div class="text-center m-5">
+        <p class="text-uppercase text-secondary fw-medium" style="letter-spacing: 4px;">authorized retailed for </p>
+
+</div>   
+<div class="d-flex justify-content-center gap-5 text-center flex-wrap mt-5 align-items-center">
+    <div>
+        <i class="fa-solid fa-laptop"></i>
+        <p class="text-uppercase text-secondary fw-medium" style="letter-spacing: 4px;">apple</p>
+    </div>
+    <div>
+        <i class="fa-solid fa-tablet"></i>
+                <p class="text-uppercase text-secondary fw-medium" style="letter-spacing: 4px;">samsung</p>
+
+    </div>
+     <div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+                <p class="text-uppercase text-secondary fw-medium" style="letter-spacing: 2px;">google</p>
+
+    </div>
+     <div>
+        <i class="fa-solid fa-headphones"></i>
+                <p class="text-uppercase text-secondary fw-medium" style="letter-spacing: 2px;">sony</p>
+
+    </div>
+     <div>
+        <i class="fa-solid fa-mobile"></i>
+                <p class="text-uppercase text-secondary fw-medium" style="letter-spacing: 2px;">relame</p>
+
+    </div>
+    <div>
+        <i class="fa-solid fa-memory"></i>
+                <p class="text-uppercase text-secondary fw-medium" style="letter-spacing:2px;">nvdia</p>
+
+    </div>
+</div> 
+</div>
+</section>
+
+<footer class="bg-body-tertiary">
+        <div class="d-flex justify-content-between p-2  align-items-center text-capitalize flex-wrap">
+            <div class="ps-3 pe-3 pt-3">
+            <p class="fs-4">tech store</p>
+            <p class="mt-0">&copy;2026 tech store all rights reserved</p>
+        </div>
+        <div class="p-3 d-flex justify-content-between text-secondary text-start">
+            <a href="" class="text-secondary">contact us</a>
+            <a href="" class=" text-secondary">privacy policy</a>
+            <a href="" class=" text-secondary">terms of service</a>
+        </div>
+        <div class="p-3 fs-3">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+        </div>
+    </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
